@@ -2,7 +2,9 @@ class WallsController < ApplicationController
 
   def index
     @walls = Wall.all
-    @reviews = @wall.reviews
+    @reviews = @wall.reviews.select do |review|
+      review.persisted?
+    end
   end
 
   def show
