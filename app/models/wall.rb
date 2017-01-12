@@ -1,4 +1,4 @@
 class Wall < ActiveRecord::Base
-  has_many :review
-  validates :content, length: { in: 7..247 }
+  has_many :reviews, dependent: :destroy
+
 end
