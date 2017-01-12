@@ -1,7 +1,7 @@
 <h1><%= @wall.name %></h1>
 <%= image_tag "#{@wall.photo}" %>
 <h2>
-  <%= pluralize @wall.reviews.size, "review" %>
+  <%= pluralize @reviews.size, "review" %>
 </h2>
 
 <div id="reviews">
