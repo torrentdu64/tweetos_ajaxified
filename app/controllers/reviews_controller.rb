@@ -1,7 +1,9 @@
 class ReviewsController < ApplicationController
   def create
     @wall = Wall.find(params[:wall_id])
-    @review = @wall.reviews.build(reviews_params)
+
+    @review = Review.new(reviews_params)
+    @review.wall = @wall
     if @review.save
       redirect_to wall_path(@wall)
     else
