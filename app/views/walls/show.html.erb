@@ -5,10 +5,10 @@
 </h2>
 
 <div id="reviews">
-  <% if @wall.reviews.blank? %>
+  <% if @reviews.blank? %>
     Be the first to leave a review for <%= @wall.name %>
   <% else %>
-    <% @wall.reviews.each do |review| %>
+    <% @reviews.each do |review| %>
       <%= render 'reviews/show', review: review %>
     <% end %>
   <% end %>
