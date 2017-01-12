@@ -1,0 +1,15 @@
+<h1><%= @wall.name %></h1>
+<%= image_tag "#{@wall.photo}" %>
+<h2>
+  <%= pluralize @wall.reviews.size, "review" %>
+</h2>
+
+<div id="reviews">
+  <% if @wall.reviews.blank? %>
+    Be the first to leave a review for <%= @wall.name %>
+  <% else %>
+    <% @wall.reviews.each do |review| %>
+      <%= render 'reviews/show', review: review %>
+    <% end %>
+  <% end %>
+</div>
