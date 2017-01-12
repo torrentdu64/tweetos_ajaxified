@@ -6,5 +6,6 @@ class WallsController < ApplicationController
 
   def show
     @wall = Wall.find(params[:id])
+    @review = Review.new
   end
 end
