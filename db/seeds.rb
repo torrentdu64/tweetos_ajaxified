@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# db/seeds.rb
+wall = Wall.create!({
+  name: "Fiscalité",
+  photo: "http://lorempixel.com/740/680/business/"
+})
+puts " created #{ wall.name }"
+wall = Wall.create!({
+  name: "Détente",
+  photo: "http://lorempixel.com/740/680/nightlife/"
+})
+puts " created #{ wall.name }"
