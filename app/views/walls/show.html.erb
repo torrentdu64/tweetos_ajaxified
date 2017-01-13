@@ -6,7 +6,9 @@
 
 <div id="reviews">
   <% if @reviews.blank? %>
-    Be the first to leave a review for <%= @wall.name %>
+    <div class="remove_noreview">
+      Be the first to leave a review for <%= @wall.name %>
+    </div>
   <% else %>
     <% @reviews.each do |review| %>
       <%= render 'reviews/show', review: review %>
