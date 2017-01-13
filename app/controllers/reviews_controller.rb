@@ -8,7 +8,11 @@ class ReviewsController < ApplicationController
       review.persisted?
     end
     if @review.save
-      redirect_to wall_path(@wall)
+      respond_to do |format|
+        format.html { redirect_to wall_path(@wall) }
+        format.js
+      end
+
     else
       render 'walls/show'
     end
