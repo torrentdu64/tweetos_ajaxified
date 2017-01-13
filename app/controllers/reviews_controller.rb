@@ -14,7 +14,11 @@ class ReviewsController < ApplicationController
       end
 
     else
-      render 'walls/show'
+      respond_to do |format|
+        format.html { render 'walls/show' }
+        format.js
+      end
+
     end
   end
 
