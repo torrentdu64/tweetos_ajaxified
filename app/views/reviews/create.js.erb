@@ -13,4 +13,5 @@
   // Reset the form
   $('#new_review').html("<%= j render 'reviews/form', wall: @wall, review: Review.new %>");
   $('#review_title').html("<%= j render 'walls/review_title', reviews: @reviews %>");
+  $('#remove_noreview').remove();
 <% end %>
