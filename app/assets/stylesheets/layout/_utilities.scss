@@ -28,6 +28,7 @@
   background-color: white;
   border-radius: 75px;
   margin: -8px;
+  box-shadow: 0 4px 7px rgba(0,0,0,0.16), 0 4px 7px rgba(0,0,0,0.23);
 }
 
 .background-tweetos{
@@ -42,4 +43,17 @@
 
 .margin-tweetos {
   margin-left: 25px;
+}
+// background reviews
+#reviews {
+    background: #f9efef;
+    padding: 20px;
+    width: 480px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.form-group {
+  margin-bottom: 12px;
+  margin-top: 20px !important;
 }
