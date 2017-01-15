@@ -3,5 +3,6 @@
 <ul>
   <% @walls.each do |wall| %>
     <li><%= link_to wall.name, wall_path(wall) %></li>
+    <li><%= image_tag wall.photo, size: "16x10"  %></li>
   <% end %>
 </ul>
