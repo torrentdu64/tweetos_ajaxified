@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :create ]
   def create
     @wall = Wall.find(params[:wall_id])
     @review = @wall.reviews.build(reviews_params)
