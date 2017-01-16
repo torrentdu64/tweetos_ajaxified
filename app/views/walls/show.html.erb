@@ -1,5 +1,10 @@
 <h1><%= @wall.name %></h1>
-<%= image_tag "#{@wall.photo}" %>
+<div id="image"></div>
+<div id="image-final">
+  <% image_tag "#{@wall.photo}", class: "img"  %>
+</div>
+
+
 <h2 id="review_title">
   <%= render 'walls/review_title', reviews: @reviews %>
 </h2>
