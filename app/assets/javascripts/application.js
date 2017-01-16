@@ -5,7 +5,6 @@
 
 
 $(document).ready(function() {
-
   $( "#image" ).append('<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>').fadeIn( 400 );
   $( "#image" ).delay( 3000 );
   $( "#image" ).slideUp( 800);
@@ -15,13 +14,13 @@ $(document).ready(function() {
   function someFunction() {
     for (var i = 0; i < 10; i++) {
         setTimeout(function(){
-          addElement();
+        addElement();
         }, 100000 * i);
     }
   }
 
   function addElement() {
-      $("#image-final").append('<img class="img" src="http://lorempixel.com/740/680/#{@wall.photo}/" alt="Nightlife">');
+    $("#image-final").append('<img class="img" src="http://lorempixel.com/740/680/#{@wall.photo}/" alt="Nightlife">');
   }
   someFunction();
 });
