@@ -11,9 +11,9 @@
 
 <div class="auth auth-postion">
   <% if user_signed_in? %>
-    <%= link_to "Pour signer le post click ici", new_user_session_path %>
+    <%= link_to "Pour signer le post click ici", destroy_user_session_path, method: :delete %>
   <% else %>
-    <%= link_to "Pour signer le post click ici", user_registration_path %>
+    <%= link_to "Pour signer le post click ici", new_user_session_path %>
   <% end %>
 </div>
 

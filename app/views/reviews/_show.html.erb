@@ -1,6 +1,10 @@
 <div class="background-tweetos">
   <p class="tweetos">
-    <span class="margin-tweetos"><%= review.content %><p class="auth"> Signer :<%= if @user_signed_in? ? (current_user.email) :  %></p></span>
+    <span class="margin-tweetos"><%= review.content %>
+      <p class="auth"> Signer :<% if user_signed_in? %> <%=current_user.email  %><% else %><%= "anonimous" %><% end %>
+
+      </p>
+    </span>
 
   </p>
 </div>
