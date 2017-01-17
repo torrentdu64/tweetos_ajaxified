@@ -1,12 +1,15 @@
-<h1>Les differents Walls</h1>
 
-<ul class="list-none">
-  <% @walls.each do |wall|  %>
+<div id="items_grid" >
+    <h1>Les differents Walls</h1>
+
+  <ul class="list-none">
+    <% @walls.each do |wall|  %>
 
 
 
-    <li><%= link_to wall.name, wall_path(wall)  %></li>
-    <li><%= image_tag  wall.photo, size: "200x180"  %></li>
+      <li><%= link_to wall.name, wall_path(wall), remote: true %></li>
+      <li><%= image_tag  wall.photo, size: "200x180"  %></li>
 
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>

@@ -2,7 +2,6 @@ class WallsController < ApplicationController
  skip_before_action :authenticate_user!, only: [ :index, :show ]
   def index
     @walls = Wall.all
-  end
 
   def show
     @wall = Wall.find(params[:id])
@@ -11,4 +10,5 @@ class WallsController < ApplicationController
       review.persisted?
     end
   end
+
 end
