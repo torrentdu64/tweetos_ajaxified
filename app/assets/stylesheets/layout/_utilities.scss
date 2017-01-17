@@ -25,10 +25,13 @@
 }
 // styles des tweetos
 .tweetos {
+
   background-color: white;
   border-radius: 75px;
   margin: -8px;
   box-shadow: 0 4px 7px rgba(0,0,0,0.16), 0 4px 7px rgba(0,0,0,0.23);
+  margin-bottom: -19px;
+    margin-top: 7px;
 }
 
 .background-tweetos{
@@ -75,3 +78,15 @@
     background-color: blanchedalmond;
     padding: 54px;
  }
+
+.auth{
+  position: relative;
+    top: 20px;
+    left: 155px;
+}
+.auth-postion{
+  position: absolute;
+    left: 700px;
+    top: 145vh;
+    display: inline-table;
+}
